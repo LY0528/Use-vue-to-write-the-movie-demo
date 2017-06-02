@@ -19,7 +19,7 @@ npm run build --report
 ```
 ### api
 使用豆瓣的电影api
-[豆瓣](https://developers.douban.com/wiki/?title=guide)
+[豆瓣](https://developers.douban.com/wiki/?title=movie_v2)
 ### 技术栈
     vue/vue-router2/vue-resource
 
