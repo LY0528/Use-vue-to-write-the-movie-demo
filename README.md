@@ -21,5 +21,5 @@ npm run build --report
 使用豆瓣的电影api
 [豆瓣](https://developers.douban.com/wiki/?title=movie_v2)
 ### 技术栈
-    vue/vue-router2/vue-resource
+    vue/vue-cli/vue-router2/vue-resource
 
