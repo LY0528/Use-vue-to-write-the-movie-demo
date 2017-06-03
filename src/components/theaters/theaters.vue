@@ -1,6 +1,6 @@
 <template>
   <div id="container" class="clearfix">
-    <ul class="theaters">
+    <ul class="movies">
       <li v-for='item in theater.subjects'>
         <img v-lazy="item.images.medium">
         <span>{{item.title}}</span>
@@ -44,13 +44,13 @@ image[lazy=loading] {
 	clear: both;
 }
 
-.theaters>li {
+.movies>li {
 	float: left;	
   width: 50%;
   text-align: center;
   padding-bottom: 1%;
 }
-.theaters>li img{
+.movies>li img{
 	width: 95%;
 }
 </style>

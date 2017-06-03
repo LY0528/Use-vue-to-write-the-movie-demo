@@ -1,7 +1,7 @@
 <template>
   <div id="container" class="clearfix">
-    <ul class="theaters">
-      <li v-for='item in theater.subjects'>
+    <ul class="movies">
+      <li v-for='item in coming.subjects'>
         <img v-lazy="item.images.medium">
         <span>{{item.title}}</span>
       </li>
@@ -19,12 +19,12 @@ Vue.use(Lazyload)
 export default {
   data() {
       return {
-        theater: {}
+        coming: {}
       }
     },
     created() {
       this.$http.jsonp('//api.douban.com/v2/movie/coming_soon', {}).then(function(res) {
-        this.theater = res.body
+        this.coming = res.body
       })
     }
 }
@@ -44,13 +44,13 @@ image[lazy=loading] {
 	clear: both;
 }
 
-.theaters>li {
+.movies>li {
 	float: left;	
   width: 50%;
   text-align: center;
   padding-bottom: 1%;
 }
-.theaters>li img{
+.movies>li img{
 	width: 95%;
 }
 </style>
